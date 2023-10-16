@@ -7,7 +7,7 @@ This can be used as an account factory baseline module.
 
 ```
 module "role_based_ssso" {
-  source = "terraform-alicloud-modules/landing-zone-account-factory-role-based-sso/alicloud"
+  source = "alibabacloud-automation/landing-zone-account-factory-role-based-sso/alicloud"
 
   metadata_file_path = "./metadata.xml"
   ram_roles = [
