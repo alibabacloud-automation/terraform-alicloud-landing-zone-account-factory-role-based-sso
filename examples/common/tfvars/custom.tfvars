@@ -1,21 +1,21 @@
 metadata_file_path = "./metadata.xml"
 ram_roles = [
   {
-    name = "Admin"
+    name        = "Admin"
     description = "Super admin"
     policies = [
       "AdministratorAccess"
     ]
   },
   {
-    name = "LogAdmin"
+    name        = "LogAdmin"
     description = "Log service full access"
     policies = [
       "AliyunLogFullAccess"
     ]
   },
   {
-    name = "NetworkAdmin"
+    name        = "NetworkAdmin"
     description = "VPC/SLB/CEN... full access"
     policies = [
       "AliyunVPCFullAccess",
@@ -26,5 +26,5 @@ ram_roles = [
     ]
   }
 ]
-saml_provider_name = "Okta"
+saml_provider_name        = "Okta"
 saml_provider_description = "Global IdP"
