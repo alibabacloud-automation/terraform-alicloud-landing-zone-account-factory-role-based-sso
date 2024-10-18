@@ -1,5 +1,5 @@
 resource "alicloud_ram_role" "ram_role" {
-  name = var.role_name
+  name        = var.role_name
   description = var.role_description
   document    = <<EOF
   {
@@ -22,7 +22,7 @@ resource "alicloud_ram_role" "ram_role" {
     "Version": "1"
   }
   EOF
-  force = true
+  force       = true
 }
 
 resource "alicloud_ram_role_policy_attachment" "ram_role_attach_policies" {

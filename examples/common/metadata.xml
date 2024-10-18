@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntityDescriptor entityID="http://example.aliyun.com/example-idp"
+    xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata">
+    <md:IDPSSODescriptor WantAuthnRequestsSigned="false"
+        protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <md:KeyDescriptor use="signing">
+            <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:X509Data>
+                    <ds:X509Certificate>MIID/zCCAuegAwIBAgIEMroKcjANBgkqhkiG9w0BAQsFADCBgDEnMCUGA1UEAxMe
+                        QWxpeXVuIFJBTSBFeGFtcGxlIENlcnRpZmljYXRlMRAwDgYDVQQLEwdBbGliYWJh
+                        MRAwDgYDVQQKEwdBbGliYWJhMREwDwYDVQQHEwhIYW5nWmhvdTERMA8GA1UECBMI
+                        WmhlSmlhbmcxCzAJBgNVBAYTAkNOMCAXDTIzMTIwNDEyMDcwMFoYDzIwNTEwNDIx
+                        MTIwNzAwWjCBgDEnMCUGA1UEAxMeQWxpeXVuIFJBTSBFeGFtcGxlIENlcnRpZmlj
+                        YXRlMRAwDgYDVQQLEwdBbGliYWJhMRAwDgYDVQQKEwdBbGliYWJhMREwDwYDVQQH
+                        EwhIYW5nWmhvdTERMA8GA1UECBMIWmhlSmlhbmcxCzAJBgNVBAYTAkNOMIIBIjAN
+                        BgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoJTegug4yqZjSsC1PQjsllkyLVdq
+                        qttPaj6cNbWPuQQ58R2AxdsXzx8sNe8IKaAXmo8k7CLXCqqKW3c4JsEkS9G/kpv4
+                        IXZA8aUp0BywPPPhracQwxrbyvHckGjUJd4Fk8EcmUc64kHNKn0BiRi/CDfS71pn
+                        8yOwC5FOIIXYxV0kSNsP2z3WkAlPWZmlVFRwWqxxFKlBN5iuXZTp8vNkShmVwAMo
+                        r5ioeAhWWwCu/JouHKkygmRgH3aF9RFY+8fx6C3GhcfKHIK3E1AmUmZZcGsCP+q4
+                        Wy0nHZxA+ZdHSxMNaBO2nInLIHuCXx3kOzyjFWwTi5FI9ptNo6KAk/pE8QIDAQAB
+                        o30wezAPBgNVHRMECDAGAQH/AgEDMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEF
+                        BQcDAjALBgNVHQ8EBAMCAoQwHQYDVR0RAQH/BBMwEYIJbG9jYWxob3N0hwR/AAAB
+                        MB0GA1UdDgQWBBT6Myn2rc1XDA6jBFXYPNb+FjWLVjANBgkqhkiG9w0BAQsFAAOC
+                        AQEAhXzTS2IhvccxsISsUSErWM42bBVDHxSkNDzhOFgtxcm5Ln4wcYrovC74vqKZ
+                        QgPZjFql7aBSoVr4WlyaZfUAtwM/zYg+InITIZACGa3UM+xyWCKIXQ4jIVWg4oPY
+                        qM+c5ie/2EVQ4bhNlD2/IXeEDdWvMs3varE1BPNOArYgkYNcDGyCJp4fd7wyZula
+                        YDdQHX7iuBuGBNdTAj9BQnqi2Qq79FwLU0kBAouJUUPOR0i0kpgn/sgRlxohv5lx
+                        U1paXm0FQXzTP1/v5ycn03sUrATzH6VDiVT67CQB4x1ri91oQTdXDW7ToFEa8b+8
+                        OtO0dDLt9gl+M2LXG2SZpYNBhg==</ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </md:KeyDescriptor>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</md:NameIDFormat>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+        <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+            Location="http://example.aliyun.com/example-idp/sso/saml" />
+        <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+            Location="http://example.aliyun.com/example-idp/sso/saml" />
+    </md:IDPSSODescriptor>
+</md:EntityDescriptor>
